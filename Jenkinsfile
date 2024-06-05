@@ -7,13 +7,13 @@ pipeline {
     stages{
         stage (DockerBuild){
         steps{
-                                 buildDockerImage("tryimg")  
+                                 buildDockerImage("iVolveimg")  
             }
         }
 
         stage(Dockerpush){
             steps{
-                                pushDockerImage("tryimg")
+                                pushDockerImage("iVolveimg")
             }
         }
 
