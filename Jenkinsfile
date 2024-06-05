@@ -1,7 +1,7 @@
 @Library('shared-library')_
 pipeline {
     agent {
-        label 'slave'
+        label 'sandbox'
         
     }
     stages{
