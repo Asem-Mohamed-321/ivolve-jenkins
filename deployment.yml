@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: lab
-        image: docker.io/
+        image: asemmohamed321/tryimg
         ports:
-        - containerPort: 80
+        - containerPort: 8081
