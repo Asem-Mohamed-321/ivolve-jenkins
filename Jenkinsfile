@@ -5,17 +5,17 @@ pipeline {
         
     }
     stages{
-        stage (DockerBuild){
-            steps{
-                                 buildDockerImage("tryimg")  
-            }
-        }
+        //stage (DockerBuild){
+          //  steps{
+            //                     buildDockerImage("tryimg")  
+            //}
+        //}
 
-        stage(Dockerpush){
-            steps{
-                                pushDockerImage("tryimg")
-            }
-        }
+        //stage(Dockerpush){
+         //   steps{
+         //                       pushDockerImage("tryimg")
+         //   }
+       // }
 
         stage(OpenshiftDeployment){
             steps{
