@@ -10,6 +10,18 @@ pipeline {
                                  buildDockerImage("tryimg")  
             }
         }
+
+        stage(Dockerpush){
+            steps{
+                                pushDockerImage("tryimg")
+            }
+        }
+
+        stage(OpenshiftDeployment){
+            steps{
+                                openshiftDeployment()
+            }
+        }
     }
     
 }
