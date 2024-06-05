@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: lab
-        image: asemmohamed321/tryimg:20
+        image: asemmohamed321/iVolveimg:latest
         ports:
         - containerPort: 8081
